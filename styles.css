@@ -12,7 +12,6 @@
         "wdth" 100;
 }
 
-
 header,
 main {
     max-width: 1440px;
@@ -108,7 +107,39 @@ main {
     border: none;
 }
 
+.flower-lover-container{
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+.lover-text-section{
+    margin-left: 100px;
+}
+.lover-title{
+    font-size: 3.1rem;
+    font-family: notoserif;
+    color: black;
+    font-weight: bold;
+}
+.lover-description li{
+    line-height: 35px;
+    font-size: 1.3rem;
+    font-family: inter;
+    color: rgba(0, 0, 0, 0.507);
+    padding: 20px;
+}
+
 @media only screen and (max-width: 425px) {
+
+    .flower-lover-container{
+        flex-direction: column;
+        margin-top: 40px;
+    }
+
+    .lover-text-section{
+        text-align: left;
+        margin: 0px;
+    }
     .plant-section h3 {
         font-size: 1.5rem;
     }
