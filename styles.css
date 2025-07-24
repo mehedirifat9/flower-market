@@ -13,7 +13,8 @@
 }
 
 header,
-main {
+main, 
+footer {
     max-width: 1440px;
     margin: 0 auto;
 }
@@ -303,6 +304,40 @@ main {
     border: none;
 }
 
+.footer-section{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: start;
+    margin-top: 50px;
+    /* margin-bottom: 30px; */
+}
+
+.links-section{
+    display: grid;grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+}
+
+.links-section a{
+    text-decoration: none;
+    color: #6B7280;
+    font-family: inter;
+    font-size: 1rem;
+}
+
+.social-links{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    align-items: center;
+    justify-items: center;
+    gap: 20px;
+}
+
+.footer-description{
+    font-size: 1.5rem;
+    font-family: inter;
+    color: rgba(0, 0, 0, 0.5);
+}
 
 
 
@@ -311,6 +346,20 @@ main {
     .input {
         font-size: .8rem;
     }
+
+    .social-links{ 
+        margin-top: 20px;
+    }
+    .links-section{
+    display: grid;grid-template-columns: repeat(1, 1fr);
+}
+
+    .footer-section{
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: start;
+    margin-top: 20px;
+}
+
 
     .subscribe-btn {
         padding: 14px 30px;
@@ -333,6 +382,7 @@ main {
         background-size: contain;
         background-repeat: no-repeat;
         margin-top: 60px;
+        height: 200px;
     }
 
     .newsletter-field h1 {
