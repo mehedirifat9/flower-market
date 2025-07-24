@@ -58,25 +58,114 @@ main {
 
 }
 
+.plant-section {
+    text-align: center;
+    margin-top: 120px;
+}
+
+.plant-section h3 {
+    font-size: 3.1rem;
+    font-family: notoserif;
+    font-weight: 700;
+}
+
+.plant-section p {
+    color: #00000088;
+    font-family: inter;
+    font-size: 1.3rem;
+}
+
+.flower-card {
+    margin-top: 50px;
+}
+
+.flower-card-section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.flower-card h2 {
+    font-family: inter;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #111111;
+}
+
+.flower-card h3 {
+    font-family: inter;
+    font-size: 1.5rem;
+    color: #111111;
+    font-weight: 600;
+}
+
+.cart-btn {
+    background-color: #E95A08;
+    font-family: inter;
+    font-size: 1rem;
+    color: white;
+    font-weight: 600;
+    padding: 19px 80px;
+    border: none;
+}
+
 @media only screen and (max-width: 425px) {
-    .banner-section{
-        flex-direction: column-reverse;
-    }
-    .banner-text-area{
-        text-align: left;
-    }
-    .navbar-section img{
-        width: 25%;
-    }
-    .banner-title{
+    .plant-section h3 {
         font-size: 1.5rem;
     }
-    .banner-section{
-        margin-top: 20px;
-    }
-    .banner-description{
+
+    .plant-section {
+    margin-top: 60px;
+}
+
+    .plant-section p {
         font-size: 0.8rem;
     }
+
+    .flower-card h2 {
+    font-size: 1rem;
+}
+
+.flower-card h3 {
+    font-size: 1rem;
+}
+
+    .banner-section {
+        flex-direction: column-reverse;
+    }
+
+    .banner-text-area {
+        text-align: left;
+    }
+
+    .navbar-section img {
+        width: 25%;
+    }
+
+    .banner-title {
+        font-size: 1.5rem;
+    }
+
+    .banner-section {
+        margin-top: 20px;
+    }
+
+    .banner-description {
+        font-size: 0.8rem;
+    }
+
+    .flower-card-section {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .flower-card-section img {
+        width: 100%;
+    }
+
+    .cart-btn {
+        padding: 19px 40px;
+    }
+
     .hide {
         display: none;
     }
