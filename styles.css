@@ -107,21 +107,24 @@ main {
     border: none;
 }
 
-.flower-lover-container{
+.flower-lover-container {
     margin-top: 200px;
     display: flex;
     justify-content: space-between;
 }
-.lover-text-section{
+
+.lover-text-section {
     margin-left: 100px;
 }
-.lover-title{
+
+.lover-title {
     font-size: 3.1rem;
     font-family: notoserif;
     color: black;
     font-weight: bold;
 }
-.lover-description li{
+
+.lover-description li {
     line-height: 35px;
     font-size: 1.3rem;
     font-family: inter;
@@ -129,52 +132,232 @@ main {
     padding: 20px;
 }
 
-.store-section-image{
+.store-section-image {
     position: relative;
 }
-.image-2{
+
+.image-2 {
     position: absolute;
-    filter: drop-shadow(4px 4px 3px black);
-    height: 286px;  
+    filter: drop-shadow(4px 4px 3px rgba(0, 0, 0, 0.5));
+    height: 286px;
     width: 286px;
     top: -130px;
     left: 395px;
 }
 
+.deals-img-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.deals-section {
+    text-align: center;
+    margin-top: 130px;
+}
+
+.deals-section h3 {
+    font-size: 3.1rem;
+    font-family: notoserif;
+    font-weight: 700;
+}
+
+.deals-section p {
+    color: #00000088;
+    font-family: inter;
+    font-size: 1.3rem;
+}
+
+.deals-image-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 120px;
+}
+
+
+.bloom-description h3 {
+    font-size: 1.25rem;
+    font-family: notoserif;
+    font-weight: bold;
+    color: white;
+}
+
+.bloom-area {
+    position: relative;
+}
+
+.bloom-area img {
+    border-radius: 25px;
+}
+
+.bloom-area-right img {
+    border-radius: 25px;
+}
+
+.bloom-description {
+    position: absolute;
+    top: 50px;
+    text-align: center;
+    left: 90px;
+}
+
+.bloom-description p {
+    font-size: 1rem;
+    font-family: inter;
+    font-weight: 600;
+    color: white;
+    text-decoration: underline;
+}
+
+/* -------------------- */
+.bloom-description-right h3 {
+    font-size: 2.5rem;
+    font-family: notoserif;
+    font-weight: bold;
+    color: white;
+}
+
+.bloom-area-right {
+    position: relative;
+    border-radius: 25px;
+}
+
+.bloom-description-right {
+    position: absolute;
+    top: 100px;
+    text-align: center;
+    left: 180px;
+}
+
+.gradiant {
+    background: linear-gradient(black);
+    opacity: 0.4;
+    height: 424px;
+    width: 753px;
+    position: absolute;
+    border-radius: 25px;
+    top: 0;
+}
+
+.gradiant-left-1 {
+    background: linear-gradient(black);
+    opacity: 0.4;
+    height: 202px;
+    width: 367px;
+    position: absolute;
+    border-radius: 25px;
+    top: 0;
+}
+
+.gradiant-left-2 {
+    background: linear-gradient(black);
+    opacity: 0.4;
+    height: 199px;
+    width: 367px;
+    position: absolute;
+    border-radius: 25px;
+    top: 0;
+}
+
+.bloom-description-right p {
+    font-size: 1.75rem;
+    font-family: inter;
+    font-weight: 600;
+    color: white;
+    text-decoration: underline;
+}
+
+
+
+
+
+
 @media only screen and (max-width: 425px) {
 
-    .flower-lover-container{
+    .bloom-description-right {
+        top: 70px;
+        left: 120px;
+    }
+
+    .deals-img-right{
+        margin-top: 0px;
+    }
+
+    .gradiant {
+    height: 207px;
+    width: 368px;
+    margin-left: 20px;
+}
+
+    .bloom-area-right img {
+    width: 90%;
+    }
+
+    .bloom-description-right h3 {
+        font-size: 1.25rem;
+        font-family: notoserif;
+        font-weight: bold;
+        color: white;
+    }
+
+    .bloom-description-right p {
+        font-size: 1rem;
+        font-family: inter;
+        font-weight: 600;
+        color: white;
+        text-decoration: underline;
+    }
+
+    .deals-image-section {
+        flex-direction: column;
+    }
+
+    .bloom-description {
+        left: 120px;
+    }
+
+    .gradiant-left-1 {
+        margin-left: 20px;
+    }
+
+    .gradiant-left-2 {
+        margin-left: 20px;
+    }
+
+    .flower-lover-container {
         flex-direction: column;
         margin-top: 40px;
     }
 
-    .image-1{
+    .image-1 {
         width: 100%;
     }
 
-    .lover-text-section{
+    .lover-text-section {
         text-align: left;
         margin: 0px;
     }
+
     .plant-section h3 {
         font-size: 1.5rem;
     }
 
     .plant-section {
-    margin-top: 60px;
-}
+        margin-top: 60px;
+    }
 
     .plant-section p {
         font-size: 0.8rem;
     }
 
     .flower-card h2 {
-    font-size: 1rem;
-}
+        font-size: 1rem;
+    }
 
-.flower-card h3 {
-    font-size: 1rem;
-}
+    .flower-card h3 {
+        font-size: 1rem;
+    }
 
     .banner-section {
         flex-direction: column-reverse;
